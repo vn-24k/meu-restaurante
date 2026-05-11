@@ -1,0 +1,4 @@
+body { background-color: #000 !important; color: #fff !important; font-family: 'Playfair Display', serif !important; }
+.navbar, footer { background: #000 !important; border-bottom: 1px solid #d4af37 !important; }
+h1, h2, h3, .logo { color: #d4af37 !important; text-transform: uppercase; letter-spacing: 5px; }
+.btn { border: 1px solid #d4af37 !important; color: #d4af37 !important; background: transparent !important; border-radius: 0; }
