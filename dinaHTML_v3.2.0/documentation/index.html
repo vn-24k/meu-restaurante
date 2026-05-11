@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dina - Restaurant, Bar, Cafe, Food HTML Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dina</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+          
+                <li><a href="#homepage">Homepage</a></li>
+                <li><a href="#menu">Menu Page</a></li>
+                <li><a href="#contact">Contact and Reservation Pages</a></li>
+                <li><a href="#gallery">Gallery Page</a></li>
+				<li><a href="#team">Team Page</a></li>
+        
+          
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Dina Documentation</h1>
+        <p>Thank you for purchasing our template. If you don't find the answers for your questions in this help file, please feel free to email via our <a target="_blank" href="http://themeforest.net/user/matchthemes">user page contact form</a> (this is the only way we can verify legitimate customers) . Thanks so much!</p>
+      </div>
+
+<div class="page-header">
+        <h1>Setup Pages</h1>
+      </div>
+
+<div class="page-header">
+        <h3 id="homepage">Homepage</h3>
+      </div>
+
+<p>In the <strong>dina-html</strong> folder you have 3 homepage variations( <strong>index.html</strong>, <strong>homepage-2.html </strong>and <strong>homepage-3.html</strong>). To change the main homepage, just rename homepage-2.html or homepage-3.html to index.html.</p>
+
+<div class="page-header">
+        <h3 id="homepage-2">Homepage Slider</h3>
+      </div>
+      
+ <p>To add your own images to the home slider, edit <strong>js/init.js</strong> file line 17:<em> slides: [{src:'images/slider/slider-1.jpg'},{src:'images/slider/slider-2.jpg'},{src:'images/slider/slider-3.jpg'},]</em></p>     
+
+<p>To change the slider text, edit index.html file, line 120:</p>
+
+<pre>
+&lt;div class="home-slider"&gt;
+&lt;div class="intro-text container"&gt;
+
+&lt;h1&gt;Welcome&lt;/h1&gt;
+     &lt;p&gt;Discover and experience fine selection of international tastes&lt;/p&gt;
+     &lt;a href="reservation.html" class="view-more more-white"&gt;Book a Table&lt;/a&gt;     
+&lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+
+<p>The homepage is formed by different section. When you edit the index.html locate a section that is between the following comments:</p>
+
+<pre>
+&lt;!-- SECTION 1 --&gt;
+
+Section code goes here  
+	
+&lt;!-- END SECTION 1 --&gt;  
+</pre>
+
+<div class="page-header">
+        <h3 id="homepage-3">Homepage Parallax Section</h3>
+      </div>
+      
+<p>Add a parallax section, by including the <strong>parallax</strong> class to the section and the image you wanted via the background-image property:</p>      
+
+<pre>
+&lt;section class="home-widget parallax"  style="background-image:url('yourImageURLHere');" &gt;
+</pre>
+
+<div class="page-header">
+        <h3 id="menu">Menu Page</h3>
+      </div>
+
+<p>You can choose from 5 different menu page templates:<strong> menu-1-col</strong>, <strong>menu-2-cols</strong>, <strong>menu-3-cols</strong>, <strong>menu-accordion</strong> and <strong>menu-grid-image</strong>.</p>  
+
+<p>For example if you want to add a new menu category with 2 new items, for the <strong>menu-2-cols </strong>template, after line 478 add the following code:</p>
+
+<pre>
+
+&lt;!-- NEW CATEGORY --&gt;
+    
+  &lt;div class="categ-name"&gt; &lt;h2&gt;New Category&lt;/h2&gt;  &lt;/div&gt;
+    
+    &lt;div class="menu-holder menu-2col"&gt;
+   
+&lt;div class="menu-post clearfix "&gt;
+
+
+&lt;div class="menu-post-img"&gt;&lt;a href="images/menu/summer-berry.jpg" class="lightbox" rel="prettyPhoto" title="Summer Berry and Coconut Tart"&gt;&lt;img width="400" height="400" src="images/menu/summer-berry.jpg" class="" alt="" title="" /&gt; &lt;/a&gt; &lt;/div&gt;
+
+&lt;div class="menu-post-desc"&gt;
+
+&lt;h4&gt;&lt;span class="menu-title"&gt;Summer Berry and Coconut Tart&lt;/span&gt; &lt;span class="menu-dots"&gt;&lt;/span&gt;&lt;span class="menu-price"&gt;$12.00&lt;/span&gt;&lt;/h4&gt;
+
+&lt;div class="menu-text"&gt; Raspberries, blackberries, blueberries, graham cracker crumbs &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+      
+&lt;div class="menu-post clearfix  last "&gt;
+
+&lt;div class="menu-post-img"&gt;&lt;a href="images/menu/pumpkin-cookies.jpg" class="lightbox" rel="prettyPhoto" title="Pumpkin Cookies Cream Cheese"&gt;&lt;img width="400" height="400" src="images/menu/pumpkin-cookies.jpg" class="" alt="" title="" /&gt; &lt;/a&gt; &lt;/div&gt;
+
+&lt;div class="menu-post-desc"&gt;
+
+&lt;h4&gt;&lt;span class="menu-title"&gt;Pumpkin Cookies Cream Cheese&lt;/span&gt; &lt;span class="menu-dots"&gt;&lt;/span&gt;&lt;span class="menu-price"&gt;$10.00&lt;/span&gt;&lt;/h4&gt;
+
+&lt;div class="menu-text"&gt; Pumpkin, sugar, butter, eggs &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;!--menu-2-col--&gt;
+
+&lt;!-- END NEW CATEGORY --&gt;
+
+</pre>
+
+<div class="page-header">
+        <h3 id="contact">Contact and Reservation Pages</h3>
+      </div>
+
+<p>In order to receive emails via the contact and reservation pages, you'll have to edit the <strong>include/contact-process.php</strong> and <strong>include/reservation-process.php</strong> files and change the <strong>$recipient</strong> variable value with your own email address.</p>
+
+<p><img src="images/contact-email.jpg" alt="" /></p>
+
+<div class="page-header">
+        <h3 id="gallery">Gallery Page</h3>
+      </div>
+
+<p>You can choose from 4 different gallery page templates:<strong> gallery-3-cols</strong>, <strong>gallery-4-cols</strong>, <strong>gallery-full-screen-3-cols</strong>and <strong>gallery-full-screen-4-cols</strong>.</p>      
+
+<p>For example if you want to add a new gallery item for the <strong>gallery-3-cols </strong>template, before the end gallery <strong>div</strong> tag holder, line 411, add the following code:</p>  
+
+<pre>
+ &lt;div class="menu-post gallery-post"&gt;
+ 
+ &lt;a href="images/gallery/gallery-1.jpg" class="lightbox" rel="prettyPhoto[gallery]" title="Morning Breakfast"&gt;
+
+&lt;div class="item-content-bkg gallery-bkg"&gt;
+
+&lt;div class="gallery-img" style="background-image:url('images/gallery/gallery-1.jpg');"&gt;&lt;/div&gt;
+
+&lt;div class="menu-post-desc"&gt;
+
+&lt;h4&gt;Morning Breakfast&lt;/h4&gt;
+&lt;div class="gallery-mglass"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+</pre>
+
+<div class="page-header">
+        <h3 id="team">Team Page</h3>
+      </div>
+
+<p>You can choose from 3 different team page templates:<strong> team (4 cols )</strong>, <strong>team-2-cols</strong>, <strong>team-3-cols</strong>.</p>      
+
+<p>For example if you want to add a new team item for the <strong>team.html</strong>template, before the end team-holder <strong>div</strong> tag, line 255, add the following code:</p> 
+
+<pre> 
+ &lt;div class="row"&gt;
+ &lt;div class="col-md-3"&gt;
+
+ &lt;div class="team-post"&gt;
+ 
+ &lt;div class="team-img"&gt;
+ 
+ &lt;img width="350" height="550" src="images/team/team-4.jpg" class="attachment-full size-full wp-post-image" alt="" title="" /&gt; 
+ &lt;/div&gt;
+ 
+&lt;div class="team-content"&gt;
+&lt;h4&gt;John Smith&lt;/h4&gt;
+&lt;p class="team-position"&gt;Manager&lt;/p&gt;
+
+&lt;ul class="team-details"&gt;
+&lt;li&gt;&lt;span&gt;Phone:&lt;/span&gt; 000 &amp;#8211; 111 &amp;#8211; 2222&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;Email:&lt;/span&gt; john@dina.com&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Short text description here. Maecenas ornare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;!--end col-md-3--&gt;  
+
+ &lt;/div&gt;&lt;!--end row--&gt;  
+</pre>
+
+
+
+</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
