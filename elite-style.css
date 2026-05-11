@@ -1,0 +1,5 @@
+body { background-color: #000 !important; color: #fff !important; font-family: 'Montserrat', sans-serif; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; color: #d4af37 !important; text-transform: uppercase; letter-spacing: 3px; }
+.navbar { background: rgba(0,0,0,0.9) !important; border-bottom: 1px solid #d4af37; }
+.btn-gold { background: transparent; border: 1px solid #d4af37; color: #d4af37; padding: 15px 30px; transition: 0.5s; }
+.btn-gold:hover { background: #d4af37; color: #000; }
